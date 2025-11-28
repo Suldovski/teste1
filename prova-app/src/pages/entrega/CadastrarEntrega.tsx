@@ -26,14 +26,12 @@ export default function CadastrarEntrega() {
     <div>
       <h2>Cadastrar Entrega</h2>
       <form onSubmit={handleSubmit}>
-        <div>
-          <label>Produto:</label>
-          <input value={produto} onChange={e => setProduto(e.target.value)} required />
-        </div>
-        <div>
-          <label>Endereço:</label>
-          <input value={endereco} onChange={e => setEndereco(e.target.value)} required />
-        </div>
+        <label>Produto:</label>
+        <input value={produto} onChange={e => setProduto(e.target.value)} required />
+        <br/>
+        <label>Endereço:</label>
+        <input value={endereco} onChange={e => setEndereco(e.target.value)} required />
+        <br/>
         <button type="submit" disabled={loading}>Cadastrar</button>
       </form>
       {msg && <p>{msg}</p>}

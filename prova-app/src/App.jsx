@@ -9,7 +9,7 @@ import EntregaRoutes from './pages/entrega';
 
 function App() {
   return (
-    <div style={{ maxWidth: 800, margin: '0 auto', padding: 20 }}>
+    <div>
       <h1>Rastreamento de Entregas</h1>
       <Routes>
         <Route path="/entrega/*" element={<EntregaRoutes />} />
