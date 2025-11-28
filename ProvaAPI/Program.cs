@@ -7,7 +7,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddCors(options => options.AddDefaultPolicy(policy => policy.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod()));
 
-var connection = builder.Configuration.GetConnectionString("DefaultConnection") ?? "Data Source=DB_LuanSuldovski.db;Initial Catalog=DB_LuanSuldovski";
+var dbPath = Path.Combine(AppContext.BaseDirectory, "DB_LuanSuldovski.db");
+var connection = $"Data Source={dbPath}";
 builder.Services.AddDbContext<AppDbContext>(opts => opts.UseSqlite(connection));
 builder.Services.AddScoped<IEntregaRepository, EntregaRepository>();
 

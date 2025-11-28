@@ -54,3 +54,7 @@ D:\Documentos\teste\ProvaAPI\obj\Debug\net8.0\refint\ProvaAPI.dll
 D:\Documentos\teste\ProvaAPI\obj\Debug\net8.0\ProvaAPI.pdb
 D:\Documentos\teste\ProvaAPI\obj\Debug\net8.0\ProvaAPI.genruntimeconfig.cache
 D:\Documentos\teste\ProvaAPI\obj\Debug\net8.0\ref\ProvaAPI.dll
+D:\Documentos\teste\ProvaAPI\bin\Debug\net8.0\client\package-lock.json
+D:\Documentos\teste\ProvaAPI\bin\Debug\net8.0\client\package.json
+D:\Documentos\teste\ProvaAPI\bin\Debug\net8.0\client\tsconfig.json
+D:\Documentos\teste\ProvaAPI\obj\Debug\net8.0\ProvaAPI.sourcelink.json
