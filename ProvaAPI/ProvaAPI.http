@@ -1,0 +1,28 @@
+### Testar API de Entregas
+
+### Cadastrar entrega
+POST http://localhost:5000/api/entrega/cadastrar
+Content-Type: application/json
+
+{
+  "produto": "Notebook",
+  "endereco": "Rua A, 123",
+  "status": "qualquer"
+}
+
+### Listar todas
+GET http://localhost:5000/api/entrega/listar
+
+### Avançar status (enviar id)
+PATCH http://localhost:5000/api/entrega/alterar
+Content-Type: application/json
+
+{
+  "id": 1
+}
+
+### Listar pendentes
+GET http://localhost:5000/api/entrega/pendentes
+
+### Listar concluidas
+GET http://localhost:5000/api/entrega/concluidas
